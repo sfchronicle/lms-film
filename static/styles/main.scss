@@ -1,0 +1,22 @@
+@import '../bower_components/normalize-scss/sass/normalize';
+@import '../bower_components/foundation-sites/scss/foundation';
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-callout;
+@include foundation-grid;
+@include foundation-menu;
+@include foundation-thumbnail;
+@include foundation-top-bar;
+@include foundation-button;
+@include foundation-flex-video;
+
+@import 'variables';
+@import 'fonts';
+@import 'project';
+
+
+
+
+
+// Load last to override CSS
+@import 'hotfixes';
