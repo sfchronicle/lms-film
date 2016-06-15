@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}New Web App | SF Chronicle{% endblock %}
+{% block title %}Last Men Standing | SF Chronicle{% endblock %}
 
 {% block head %}
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -11,59 +11,56 @@
 	<div class="callout large">
 		<div class="row column text-center">
 			<div class="logo"><img src="http://projects.sfchronicle.com/shared/logos/sfc_logo_black.png"></div>
-			Presents:
-			<h1>Last Men Standing</h1>
+			<h1>LAST MEN STANDING</h1>
 			<p class="lead">A film by Erin Brethauer & Tim Hussin</p>
-			<a href="#trailer" class="button medium">Trailer</a>
-			<a href="#film" class="button medium">See the film</a>
-			<a href="#about" class="button medium">About</a>
-			<a href="#press" class="button medium">Press</a>
-			<a href="#resources" class="button medium">Resources</a>
+			<div class="mobile-nav">
+				<a href="#trailer" class="button medium">TRAILER</a>
+				<a href="#film" class="button medium">SCREENINGS</a>
+				<a href="#about" class="button medium">ABOUT</a>
+				<a href="#press" class="button medium">PRESS</a>
+				<a href="#resources" class="button medium">RESOURCES</a>
+			</div>
 		</div>
 	</div>
+
+	<div class="row center-images">
+			<img src="{{ url_for('static', filename='images/laurels/frameline.png') }}">
+			<img src="{{ url_for('static', filename='images/laurels/qdoc.png') }}"> 
+			<img src="{{ url_for('static', filename='images/laurels/toronto.png') }}">
+				<span id="image-jump"><br></span>
+			<img src="{{ url_for('static', filename='images/laurels/twist.png') }}">
+			<img src="{{ url_for('static', filename='images/laurels/outfest.png') }}">
+	</div>
+
+
 	<div class="trailer-wrapper">
 		<div id="trailer">
+
+			<h2 class="text-center">About the film</h2>
+
 			<div class="flex-video widescreen vimeo">
 	  			<iframe src="http://player.vimeo.com/video/141968771" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
-
-		<div class="small-6 medium-3 large-2 large-offset-3 column">
-			<img src="{{ url_for('static', filename='images/laurels/frameline.png') }}">
-		</div>
-		<div class="small-6 medium-3 large-2 column">
-			<img src="{{ url_for('static', filename='images/laurels/qdoc.png') }}">
-		</div>
-		<div class="small-6 medium-3 large-2 column float-none">
-			<img src="{{ url_for('static', filename='images/laurels/twist.png') }}">
-		</div>
-
-	</div>
-	<div class="row">
-		<div class="small-6 medium-3 large-2 column">
-			<img src="{{ url_for('static', filename='images/laurels/toronto.png') }}">
-		</div>
-		<div class="small-6 medium-3 large-2 column">
-			<img src="{{ url_for('static', filename='images/laurels/outfest.png') }}">
-		</div>
-
-	</div>
-	<hr>
 	<div id="film" class="row">
 		<div class="large-12">
-			<h2 class="text-center">See the film</h2>
+			<h2 class="text-center">Screenings</h2>
 		</div>
 		
 		<div class="medium-6 columns">
 			<h3>Current</h3>
-			<p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+			<p><a href="https://ticketing.frameline.org/festival/film/detail.aspx?id=3889&FID=53" target="_blank">Frameline 40</a>, San Francisco — June 19, 2016</p>
+			<p>Seattle Twist of Pride Film Festival, Seattle — June 19, 2016</p>
+			<p><a href="https://secure.outfest.org/tixSYS/2016/filmguide/Title/LL" target="_blank">Outfest</a>, Los Angeles — July 11, 2016</p>
+			<p><a href="https://secure.outfest.org/tixSYS/2016/filmguide/Title/LL" target="_blank">U.S. Conference on AIDS</a>, Hollywood, Florida — Sept. 15, 2016</p>
 		</div>
 		<div class="medium-6 columns">
 			<h3>Past</h3>
-			<p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+			<p>World Premiere (Castro Theatre), San Francisco — April 8, 2016</p>
+			<p><a href="http://www.queerdocfest.org/film/last-men-standing/" target="_blank">Queer Documentary Film Festival</a>, Portland — May 22, 2016</p>
+			<p><a href="http://insideout.ca/torontofestival/film/last-men-standing" target="_blank">Inside Out LGBT Film Festival</a>, Toronto — June 2, 2016</p>
 		</div>
 
 	</div>
@@ -73,7 +70,7 @@
 			<h2 class="text-center">About the film</h2>
 		</div>
 		
-		<div class="large-offset-3 large-6">
+		<div class="large-offset-3 large-6 column">
 			
 			<p>In “Last Men Standing,” eight long-term AIDS survivors share the stories of their lives, lives they never expected to have after surviving the most deadly years of the AIDS epidemic. The film provides emotional context both for what it was like to experience those dark years and to deal with the day-to-day struggles aging AIDS survivors continue to face. Amid debilitating and chronic health issues and growing financial and housing hardships, the men in “Last Men Standing” exhibit emotions ranging from anger to resignation to resilience.</p><p>As the first feature film produced by the San Francisco Chronicle in its 151-year history, the film is the latest chapter in the paper’s history of in-depth reporting on the AIDS epidemic and its aftermath since 1981. The film, which was directed, produced, filmed and edited by Chronicle staff visual journalists Erin Brethauer and Tim Hussin, was created over the course of ten months and was released in conjunction with a special 20-page newspaper section featuring a story by Erin Allday and an accompanying online package of stories, videos and interactive graphics.</p><p>While presenting the heartache these men experienced during the peak of the AIDS epidemic, the film also aims to shed light on these survivors’ often still precarious lives. From evictions to memory loss due to HIV- and AIDS-related dementia, the challenges these men face have persisted long past the epidemic of the 1980s and early ‘90s.Yet we see that they still find ways to usher peace and joy into their lives through relationships, artwork, humor and community.</p><p>The eight subjects of the film display extraordinary honesty and bravery in sharing their stories, offering intimate glimpses into their darkest struggles. By mingling their poignant stories with striking imagery, the filmmakers hope “Last Men Standing” creates an atmosphere where viewers can meditate on the men's words and develop a deeper understanding of their lives. Though it is a tale about AIDS survivors, the filmmakers hope it tells a larger story: how we all can find the strength to survive the worst situations and come through on the other side with open hearts.</p>
 		</div>
@@ -85,15 +82,32 @@
 			<h2 class="text-center">About the filmmakers</h2>
 		</div>
 		
-		<div class="medium-6 column">
+		<div class="large-12" style="max-width: 650px; margin: 0 auto"><img src="{{ url_for('static', filename='images/timerin.jpg') }}"></div>
+
+		<div class="medium-6 column" style="margin-top: 2em">
 			
-			<h5>Tim Hussin</h5><p>@timhussin<br>Thussin@sfchronicle.com</p>
-			<p>Tim is a documentary filmmaker and photographer on staff at the San Francisco Chronicle. His work has appeared in various publications, including National Geographic Magazine, The New York Times, The Wall Street Journal, NPR, The Telegraph, among others. He was trained in Video Production at the NYC-based production company MediaStorm. Last Men Standing is his second feature length documentary film. His first, America Recycled, chronicles his two-year, 5,000 mile bicycle journey with his brother through radical communities in the American South.</p>
+			<h5><strong>Erin Brethauer</strong></h5>
+
+			<a href="mailto:ebrethauer@sfchronicle.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+			<a href="http://twitter.com/erinbrethauer" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+
+			<p>Erin is a documentary filmmaker and video editor at the San Francisco Chronicle where she works on projects. Last Men Standing is her first feature-length film. Before moving to the Bay Area, she was a multimedia editor and staff photographer for seven years at the Citizen-Times in Asheville, North Carolina.</p>
+
 		</div>
-		<div class="medium-6 column">
+
+		<div class="medium-6 column" style="margin-top: 2em">
 			
-			<h5>Erin Brethauer</h5><p>@erinbrethauer<br>Ebrethauer@sfchronicle.com</p>
-			<p>Erin Brethauer is a documentary filmmaker and video editor at the San Francisco Chronicle where she works on projects. Last Men Standing is her first feature-length film. She also co-produces The Regulars, a weekly photo and video column. Before moving to the Bay Area, she was a multimedia editor and staff photographer at the Citizen-Times in Asheville, North Carolina where she lived and worked for seven years as a staff photographer and multimedia editor.</p><p>Brethauer and Hussin also co-produce the weekly video column, The Regulars, which offers a poetic glimpse into the lives of everyday people in the Bay Area, caught in routine activities of modern urban life. You can see their column at www.sfchronicle.com/theregulars.</p>
+			<h5><strong>Tim Hussin</strong></h5>
+
+			<a href="mailto:thussin@sfchronicle.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+			<a href="http://twitter.com/timhussin" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+
+			<p>Tim is a documentary filmmaker and photographer on staff at the San Francisco Chronicle. His work has appeared in various publications, including National Geographic Magazine, The New York Times, The Wall Street Journal, NPR, The Telegraph, among others. He was trained in Video Production at the NYC-based production company MediaStorm. Last Men Standing is his second feature length documentary film. His first, America Recycled, chronicles his two-year, 5,000 mile bicycle journey with his brother through radical communities in the American South.</p>
+
+		</div>
+
+		<div class="large-12 column" style="float: left; margin-top: 2em">
+			<p>Brethauer and Hussin also co-produce the weekly video column, The Regulars, which offers a poetic glimpse into the lives of everyday people in the Bay Area, caught in routine activities of modern urban life. You can see their column at <a href="http://www.sfchronicle.com/theregulars" target="_blank">www.sfchronicle.com/theregulars</a>.</p>
 		</div>
 	</div>
 	<hr>
@@ -124,26 +138,28 @@
 	<div id="resources" class="row">
 		<div class="large-12">
 			<h2 class="text-center">Resources</h2>
-			<div style="text-align:center;max-width:800px;margin:0 auto 4em;">
+			<div style="text-align:center;max-width:800px;margin:0 auto 3em;">
 			<p>Isolation is one of the most widespread and harmful consequences of long-term survival. Drawing men out of their homes is also one of the biggest challenges facing the city and agencies that serve people with HIV.</p><p>Here are some of the social outlets that already are available, or may be starting soon.</p></div>
 		</div>
 		
 		<div class="medium-6 column">
-			<p>Elizabeth Taylor 50-Plus Network. This San Francisco AIDS Foundation group meets weekly to provide friendship and support for long-term survivors and others affected by AIDS.</p>
-			<p>Honoring Our Experience. A group started by survivor Gregg Cassin and supported by the Shanti Project that holds weekly meetings as well as weekend retreats at least three times a year. The group also hosts dances for long-term survivors.</p>
-			<p>The Billys. A gay men’s club created in the late 1980s with roots in the epidemic. It’s for men of all ages, but most participants are older and many are HIV-positive. The group holds weekend retreats.</p>
-			<p>Let’s Kick ASS. A grassroots support group started by long-term survivor Tez Anderson that holds weekly fitness sessions and other meetings in the Castro.</p>
+			<p><a href="http://sfaf.org/client-services/50-plus/" target="_blank">Elizabeth Taylor 50-Plus Network</a>. This San Francisco AIDS Foundation group meets weekly to provide friendship and support for long-term survivors and others affected by AIDS.</p>
+			<p><a href="http://www.saratogasprings.com/retreats/HonoringOurExperience.html" target="_blank">Honoring Our Experience</a>. A group started by survivor Gregg Cassin and supported by the Shanti Project that holds weekly meetings as well as weekend retreats at least three times a year. The group also hosts dances for long-term survivors.</p>
+			<p><a href="http://thebillys.org/" target="_blank">The Billys</a>. A gay men’s club created in the late 1980s with roots in the epidemic. It’s for men of all ages, but most participants are older and many are HIV-positive. The group holds weekend retreats.</p>
+			<p><a href="http://letskickass.org/" target="_blank">Let’s Kick ASS</a>. A grassroots support group started by long-term survivor Tez Anderson that holds weekly fitness sessions and other meetings in the Castro.</p>
 		</div>
 		<div class="medium-6 column">
-			
-			<p>Openhouse HIV support group. Openhouse is an agency serving LGBT seniors, and its HIV support group, started 15 years ago, may be the only formal, therapist-led group for long-term survivors in San Francisco. There is a waiting list to get into the group. Openhouse also has non-HIV-specific programs for LGBT seniors.</p>
-			<p>HIV Long-Term Survivors. Jesus Guillen started this private Facebook group last summer, and it already has more than 1,400 members.</p><p>Shanti Project. Shanti reengineered a longstanding program for learning life skills to meet the needs of survivors. Shanti also is starting a new formal support group for long-term survivors on March 10. Anyone interested in joining should email Eric Sutter at esutter@shanti.org.</p>
+			<p><a href="http://openhouse-sf.org/" target="_blank">Openhouse HIV support group</a>. Openhouse is an agency serving LGBT seniors, and its HIV support group, started 15 years ago, may be the only formal, therapist-led group for long-term survivors in San Francisco. There is a waiting list to get into the group. Openhouse also has non-HIV-specific programs for LGBT seniors.</p>
+			<p><a href="https://www.facebook.com/groups/466278376873515/" target="_blank">HIV Long-Term Survivors</a>. Jesus Guillen started this private Facebook group last summer, and it already has more than 2,300 members.</p>
+			<p><a href="http://www.shanti.org/" target="_blank">Shanti Project</a>. Shanti reengineered a longstanding program for learning life skills to meet the needs of survivors. Shanti also is starting a new formal support group for long-term survivors on March 10. Anyone interested in joining should email Eric Sutter at <a href="mailto:esutter@shanti.org">esutter@shanti.org</a>.</p>
 		</div>
 	</div>
 	<div class="row column">
 	
 	<hr>
 	
+	</div>
+
 {% endblock %}
 
 {% block javascript %}
