@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width">
+    {% include 'components/_social.html' %}
     <link rel="icon" href="http://www.sfchronicle.com/favicon.ico?v=3">
     {% block head %}{% endblock %}
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
