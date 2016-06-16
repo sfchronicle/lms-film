@@ -8,7 +8,7 @@
     {% block head %}{% endblock %}
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    {% include 'components/_hearst.html' %}
   </head>
   <body class="{% if config.DEBUG %}debug{% endif %}">
     <!--[if lt IE 10]>

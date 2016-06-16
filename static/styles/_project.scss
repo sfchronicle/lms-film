@@ -121,3 +121,27 @@ i:hover, i:focus {
     margin-left: 20%;
     }
 }
+
+//footer
+footer {
+    background: rgb(246,221,213);
+    opacity: 1;
+    padding: 0 10px;
+    position: relative;
+    z-index: 99;
+    margin-top: 10px;
+    cursor: pointer;
+    overflow: auto;
+
+    .logo-btm {
+        float: left;
+        margin-right: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+footer .logo-btm img {
+    margin-top: 10px;
+    height: 20px;
+}
